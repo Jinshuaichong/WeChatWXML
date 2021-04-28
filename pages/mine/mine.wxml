@@ -1,0 +1,49 @@
+<!-- 已经登陆显示接下来的内容 -->
+<!-- 学生页面 -->
+<view wx:if="{{user.role=='1'}}">
+  <view>
+    <image class="bgPic" src="../../images/bg2.jpg" mode="cover"/> 
+  </view>
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <open-data  type="userAvatarUrl"></open-data>
+    </view>
+    <view>姓名:{{user.sname}}</view>
+    <view>班级号:{{user.sclass}}</view>
+    <view>学号:{{user.sno}}</view>
+    <rich-text class="facemess" space="true" wx:if="{{facemess}}">  {{facemess}}</rich-text>
+  </view>
+  <!-- 功能栏 -->
+  <!-- 导航开始 -->
+  <view class="index_cate" >
+    <view wx:for="{{catalog}}" wx:key="name" bindtap="funBtn" data-index="{{item.id}}">
+         <image mode="widthFix" src="{{item.image_src}}"></image>
+         <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>
+
+
+
+<!-- 教师页面 -->
+
+<!-- 已经登陆显示接下来的内容 -->
+<view wx:else="{{user.role=='0'}}">
+  <view>
+    <image class="bgPic" src="../../images/bg2.jpg" mode="cover"/> 
+  </view>
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <open-data  type="userAvatarUrl"></open-data>
+    </view>
+    <view>欢迎你:{{user.sname}}老师</view>
+    <view>学工号:{{user.sno}}</view>
+  </view>
+  <view class="index_cate" >
+    <view wx:for="{{catalog}}" wx:key="name" bindtap="teacherBtn" data-index="{{item.id}}">
+         <image mode="widthFix" src="{{item.image_src}}"></image>
+         <text>{{item.name}}</text>
+    </view>
+  </view>
+</view>
+

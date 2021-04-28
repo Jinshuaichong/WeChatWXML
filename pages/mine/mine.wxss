@@ -1,0 +1,67 @@
+.bgPic{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+.userinfo {  
+  position: relative;  
+  width: 750rpx;  
+  height: 400rpx;  
+  color: #fff;  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center;
+  font-size: 14px;   
+  border-radius:40%; 
+}  
+  
+.userinfo-avatar {  
+  overflow:hidden;  
+  display: block;  
+  width: 160rpx;  
+  height: 160rpx;  
+  margin: 20rpx;  
+  margin-top: 50rpx;  
+  border-radius: 50%;  
+  border: 2px solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.logoutbtn{
+  /* position: absolute;
+  margin-top: 790rpx;
+  justify-content: center;
+  align-items: center;
+  margin-left: 27%; */
+  padding-top: 75%;
+}
+.index_cate {
+  display: flex;
+}
+.index_cate view {
+  padding: 20rpx;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.index_cate view image {
+  width: 100%;
+}
+.index_cate view text {
+  font-size: small;
+  
+}
+.funtext{
+  
+  justify-content: center;
+  align-items: center;
+  
+}
+.facemess{
+  color:red;
+}
+.wrap{
+  flex-wrap: wrap;
+}

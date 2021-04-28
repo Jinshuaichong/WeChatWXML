@@ -1,0 +1,58 @@
+<!--pages/detail/detail.wxml-->
+<view>
+    <image class="bgPic" src="../../images/bg2.jpg" mode="cover"/> 
+  </view>
+<view class="info" wx:if="{{user.role=='1'}}">
+  <!-- 姓名 -->
+  <view>
+    <view class="fl">姓名</view>
+    <view class="rl">{{user.sname}}<view class="arrow"></view></view>
+  </view>
+  <!-- 学号 -->
+  <view>
+    <view class="fl">学号</view>
+    <view class="rl">{{user.sno}}<view class="arrow"></view></view>
+  </view>
+  <!-- 班级 -->
+  <view>
+    <view class="fl">班级</view>
+    <view class="rl">{{user.sclass}}<view class="arrow"></view></view>
+  </view>
+  <!-- 出生日期 -->
+  <view>
+    <view class="fl">出生日期</view>
+    <view class="rl">{{user.sbirth}}<view class="arrow"></view></view>
+  </view>
+  <!-- 性别 -->
+  <view>
+    <view class="fl">性别</view>
+    <view class="rl">{{user.ssex=='0'?'女':'男'}}<view class="arrow"></view></view>
+  </view>
+  <!-- 人脸录入 -->
+  <view>
+    <view class="fl">是否录入人脸</view>
+    <view class="rl">{{user.sface==0?'否':'是'}}<view class="arrow"></view></view>
+  </view>
+  <button class="logoutBtn" bindtap="logout" type="primary">退出登录</button>
+</view>
+
+
+<!-- 教师 -->
+<view class="info" wx:if="{{user.role=='0'}}">
+  <!-- 姓名 -->
+  <view>
+    <view class="fl">姓名</view>
+    <view class="rl">{{user.sname}}<view class="arrow"></view></view>
+  </view>
+  <!-- 学工号 -->
+  <view>
+    <view class="fl">学工号</view>
+    <view class="rl">{{user.sno}}<view class="arrow"></view></view>
+  </view>
+  <!-- openid -->
+  <view>
+    <view class="fl">性别</view>
+    <view class="rl">{{user.ssex=='0'?'女':'男'}}<view class="arrow"></view></view>
+  </view>
+  <button class="logoutBtn" bindtap="logout" type="primary">退出登录</button>
+</view>

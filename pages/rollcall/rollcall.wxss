@@ -1,0 +1,79 @@
+
+.top{
+    display:flex;
+    flex-direction: row;
+    width:90%;
+    height:180rpx;
+    padding:10rpx 10rpx;
+    margin:10rpx auto;
+  }
+  .top-trimg{
+    width:160rpx;
+    height:160rpx;
+    margin:15rpx 20rpx; 
+   
+  }
+  .top-info{
+    margin:15rpx 20rpx;
+    overflow: hidden; 
+    font-size: 32rpx;
+    font-family: "微软雅黑";
+    color:#606060;
+  }
+  .toin-info{
+    line-height: 60rpx;
+    font-size: 28rpx;
+  }
+  .in-title{
+    font-size: 32rpx;
+    font-family: "微软雅黑";
+    color:#606060;
+    line-height: 60rpx;
+    padding-left:20rpx;
+    border-left: 10rpx solid #4ec4c8;
+    border-bottom: 1rpx solid #eeeeee;
+  }
+  .in-info{
+    font-size: 40rpx;
+    font-family: "微软雅黑";
+    color:#606060;
+    line-height: 60rpx;
+    padding:16rpx;
+  }
+  .clear{
+    display: flex;
+    flex-direction: column;
+    height:16rpx;
+    background: #eeeeee;
+  }
+  .deleteBtn{
+    position: relative;
+    margin-top: 30rpx;
+  }
+  .classNo{
+
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+    height: 5%;
+    border: 5rpx solid #000000;
+    margin-bottom: 30rpx;
+    margin-top: 5%;
+    margin-left: 22%;
+    border-radius: 13rpx;
+    border-color: #00d2d3;
+}
+.phcolor{
+    color: #576574;
+}
+.incScore{
+    position: absolute;
+    margin-top: 150rpx;
+    margin-left: 175rpx;
+}
+.decScore{
+    position: absolute;
+    margin-top: 150rpx;
+    margin-left: 450rpx;
+}

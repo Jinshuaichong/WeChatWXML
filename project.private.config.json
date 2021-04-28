@@ -1,0 +1,71 @@
+{
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/login/login",
+                    "pathName": "pages/login/login",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/mine/mine",
+                    "pathName": "pages/mine/mine",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/teacher/teacher",
+                    "pathName": "pages/teacher/teacher",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/setting/setting",
+                    "pathName": "pages/setting/setting",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/faceinput/faceinput",
+                    "pathName": "pages/faceinput/faceinput",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/askLeave/askLeave",
+                    "pathName": "pages/askLeave/askLeave",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/studentdetail/studentdetail",
+                    "pathName": "pages/studentdetail/studentdetail",
+                    "query": "studentid=37",
+                    "scene": null
+                },
+                {
+                    "name": "pages/signin/signin",
+                    "pathName": "pages/signin/signin",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/rollcall/rollcall",
+                    "pathName": "pages/rollcall/rollcall",
+                    "query": "studentid=33",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,58 @@
+<view class="content">
+  <view class="top">
+    <view class="top-tr">
+     <image src="{{baseUrl}}{{student.facename}}" class="top-trimg"></image>
+    </view>
+    <view class="top-info">
+      <view class="toin-name">姓名:{{student.sname}}</view>
+      <view class="toin-info"></view>
+    </view>
+  </view>
+  <view class="clear"></view>
+  <!-- 学号 -->
+  <view class="info">
+    <view class="in-title">学号</view>
+    <view class="in-info">{{student.sno}}</view>
+  </view>
+  <view class="clear"></view>
+  <!-- 平时成绩 -->
+  <view class="info">
+    <view class="in-title">平时成绩</view>
+    <view class="in-info">{{student.score}}</view>
+  </view>
+  <view class="clear"></view>
+  <!-- 班级 -->
+  <view class="info">
+    <view class="in-title">班级</view>
+    <view class="in-info">{{student.sclass}}</view>
+  </view>
+  <view class="clear"></view>
+  <!-- 出生日期 -->
+  <view class="info">
+    <view class="in-title">出生日期</view>
+    <view class="in-info">{{student.sbirth}}</view>
+  </view>
+  <view class="clear"></view>
+  
+  <!-- 性别 -->
+  <view class="info">
+    <view class="in-title">性别</view>
+    <view class="in-info">{{student.ssex=='0'?'女':'男'}}</view>
+  </view>
+  <view class="clear"></view>
+  <!-- 是否录入人脸 -->
+  <view class="info">
+    <view class="in-title">是否录入人脸</view>
+    <view class="in-info">{{student.sface==1?"是":"否"}}</view>
+  </view>
+  <view class="clear"></view>
+  <!-- openid -->
+  <view class="info">
+    <view class="in-title">openid</view>
+    <view class="in-info">{{student.openid?student.openid:"无"}}</view>
+  </view>
+  <view class="clear"></view>
+  
+  <!-- 删除该用户 -->
+  <button class="deleteBtn" type="primary" bindtap="deleteStudent">删除该学生</button>
+</view>

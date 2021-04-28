@@ -1,0 +1,14 @@
+<!--pages/detail/detail.wxml-->
+<view>
+    <image class="bgPic" src="../../images/bg2.jpg" mode="cover"/> 
+  </view>
+<view class="info">
+  <!-- 姓名 -->
+  <view wx:for="{{studentList}}" wx:key="id">
+    <view class="fl">姓名:{{item.sname}}</view>
+    <view class="rl" bindtap="detailInfo" data-index="{{item.id}}">查看详情<view class="arrow"></view></view>
+    <image bindtap="topic_preview" data-id="{{item.id}}" data-url="{{baseUrl}}{{item.facename}}" src="{{baseUrl}}{{item.facename}}"/>
+  </view>
+  <!-- 学号 -->
+  <!-- <button class="logoutBtn" bindtap="uploadNote" type="primary">上传假条</button> -->
+</view>

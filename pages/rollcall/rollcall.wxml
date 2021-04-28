@@ -1,0 +1,42 @@
+<view class="content">
+  <view class="top">
+    <view class="top-tr">
+     <image src="{{baseUrl}}{{student.facename}}" class="top-trimg"></image>
+    </view>
+    <view class="top-info">
+      <view class="toin-name">姓名:{{student.sname}}</view>
+      <view class="toin-info"></view>
+    </view>
+  </view>
+  <view class="clear"></view>
+  <!-- 学号 -->
+  <view class="info">
+    <view class="in-title">学号</view>
+    <view class="in-info">{{student.sno}}</view>
+  </view>
+  <view class="clear"></view>
+  <!-- 平时成绩 -->
+  <view class="info">
+    <view class="in-title">平时成绩</view>
+    <view class="in-info">{{student.score}}</view>
+  </view>
+  <view class="clear"></view>
+  <!-- 班级 -->
+  <view class="info">
+    <view class="in-title">班级</view>
+    <view class="in-info">{{student.sclass}}</view>
+  </view>
+  <view class="clear"></view>
+
+  <!-- 性别 -->
+  <view class="info">
+    <view class="in-title">性别</view>
+    <view class="in-info">{{student.ssex=='0'?'女':'男'}}</view>
+  </view>
+  <view class="clear"></view>
+  <view>
+    <input  class="classNo" bindinput="inputScore" type="text" name="score" placeholder="分数" placeholder-class="phcolor"/>
+  </view>
+<button class="incScore" bindtap="incScore" type="primary">加分</button>
+<button class="decScore" bindtap="decScore" type="primary">减分</button>
+</view>

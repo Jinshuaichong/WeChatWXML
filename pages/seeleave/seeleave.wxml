@@ -1,0 +1,14 @@
+<!--pages/detail/detail.wxml-->
+<view>
+    <image class="bgPic" src="../../images/bg2.jpg" mode="cover"/> 
+  </view>
+<view class="info">
+  <!-- 姓名 -->
+  <view wx:for="{{askList}}" wx:key="id">
+    <view class="fl">请假时间:{{item.sendtime}}</view>
+    <view class="rl" wx:if="{{item.state==0}}"  bindtap="accessLeave" data-index="{{item.id}}">待审核<view class="arrow"></view></view>
+    <image bindtap="topic_preview" data-id="{{item.id}}" data-url="{{item.imgUrl}}" src="{{item.imgUrl}}"/>
+  </view>
+  <!-- 学号 -->
+  <!-- <button class="logoutBtn" bindtap="uploadNote" type="primary">上传假条</button> -->
+</view>

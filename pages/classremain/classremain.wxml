@@ -1,0 +1,21 @@
+<view>
+    <image class="bgPic" src="../../images/bg2.jpg" mode="cover"/>
+</view>
+<form bindsubmit="sendMessage" wx:if="{{!hasData}}">
+  <view>
+    <input  class="classNo" type="text" name="classNo" placeholder="请输入班级号" placeholder-class="phcolor"/>
+  </view>
+  <view>
+    <input  class="class_data" type="text" name="class_data" placeholder="日期,如20210426" placeholder-class="phcolor"/>
+  </view>
+  <view>
+    <input  class="class_jie" type="text" name="class_jie" placeholder="上课节次" placeholder-class="phcolor"/>
+  </view>
+  <view>
+    <input  class="class_name" type="text" name="class_name" placeholder="课程名称" placeholder-class="phcolor"/>
+  </view>
+  <view>
+    <input  class="class_addr" type="text" name="class_addr" placeholder="上课地址" placeholder-class="phcolor"/>
+  </view>
+  <view class="sendBtn"><button form-type="submit" type="primary">发送消息</button></view>
+</form>

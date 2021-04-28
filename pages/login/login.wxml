@@ -1,0 +1,20 @@
+
+<!-- 未登录显示接下来的内容 -->
+<view wx:if="{{!token}}">
+  <image class="bgPic" src="../../images/bg.jpg" mode="cover"/> 
+  <form bindsubmit="getProfile">
+  <view class="logo">
+    <image class="logo" src="../../images/logo.jpg"/>
+  </view>
+  <view class="proname">与你相伴j</view>
+  <view>
+    <input  class="Infoinputaccount" type="text" name="account" placeholder="请输入学工号/学号" placeholder-class="phcolor"/>
+  </view>
+  <view>
+    <input class="Infoinputpassword" type="password" name="password" placeholder="请输入密码" placeholder-class="phcolor"/>
+  </view>
+  <view class="loginbtn" ><button form-type="submit" type="primary">点击登录</button></view>
+  
+</form>
+</view>
+
