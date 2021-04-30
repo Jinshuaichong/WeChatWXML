@@ -25,7 +25,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    baseUrl:"http://172.20.10.2:8080/wechatHT",
+    baseUrl:"http://42.193.108.188:8080/wechatHT",
     //127.0.0.1 42.193.108.188
   }
 })
