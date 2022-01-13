@@ -1,4 +1,5 @@
-# 微信签到小程序前端
+# 微信签到小程序前端程序（后端未开源）
+演示地址：https://www.jinshuaichong.com/resources/WechatDemo.mp4
 
 #### 介绍
 此仓库用来保存微信签到小程序的前端代码
