@@ -1,4 +1,4 @@
-# 微信签到小程序前端程序（后端未开源）
+# 微信签到小程序前端程序
 演示地址：https://www.jinshuaichong.com/usr/uploads/resources/WechatDemo.mp4
 
 #### 介绍
